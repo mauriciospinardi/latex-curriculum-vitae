@@ -36,7 +36,6 @@
 
 % Character encoding
 \usepackage[utf8]{inputenc}
-%\usepackage{CJKutf8}                   % CJK is nedeed for chinese, japanese and korean langauges
 
 % Page margin
 \usepackage[scale=0.75]{geometry}
@@ -52,6 +51,10 @@
 
 % Timeline scale
 \tlmaxdates{2010}{2019}
+
+% C++
+\usepackage{relsize}
+\newcommand\CC{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
 
 % ************************************ %
 % Personal data                        %
@@ -78,7 +81,7 @@
 
 \extrainfo{26 anos, solteiro}
 
-%\photo[64pt][0.4pt]{../res/profile_pic}
+\photo[64pt][0.4pt]{../res/profile_pic}
 
 %\quote{Some quote (optional)}
 
@@ -107,19 +110,32 @@
 % --------------------------------------
 \section{Formação acadêmica}
 
-\tlcventry{2017}{0}{Mestrado em Computação Científica e Ciência Computacional}{Programa de Pós-graduação em Ciência da Computação, UFSCar}
+\tlcventry{2017}{0}{Mestrado em Computação Científica e Ciência Computacional}
+{Programa de Pós-graduação em Ciência da Computação, UFSCar}
 {Sorocaba}{SP}{Previsão de encerramento: 2019}
 
-\tlcventry{2011}{2016}{Bacharelado em Ciência da Computação}{UFSCar}
+\tlcventry{2011}{2016}{Bacharelado em Ciência da Computação}
+{UFSCar}
 {Sorocaba, SP}{}{}
 
-\tllabelcventry{2010}{2010}{2010}{Ensino Médio}{Colégio Terras}
+\tllabelcventry{2010}{2010}{2010}{Ensino Médio}
+{Colégio Terras}
 {Itu}{SP}{}
 
 % 
 % --------------------------------------
 
-%\footer{Desenvolvido em \LaTeX}
+\section{Resumo}
 
-%\clearpage\end{CJK*}                   % CJK is nedeed for chinese, japanese and korean langauges
+\cvitem{}{Desenvolvedor de aplicações embarcadas, com experiência em C, \CC,
+Java e Lua, meios de captura (mensageria ISO 8583, processamento EMV) e
+manutenção reativa. Mestrando pela Universidade Federal de São Carlos, em
+Computação Científica e Inteligência Computacional.}
+
+% 
+% --------------------------------------
+
+\vfill
+Desenvolvido em \LaTeX
+
 \end{document}
