@@ -1,1 +1,8 @@
+*.aux
+*.fdb*
+*.fls*
+*.log
+*.out
+*.pdf
+*.synctex*
 *.wakatime*
