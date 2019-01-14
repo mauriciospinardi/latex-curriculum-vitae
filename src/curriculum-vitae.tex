@@ -1,0 +1,125 @@
+%% Project: Curriculum-Vitae
+ % -------------------------------------
+ %
+ % Author:            Maurício Spinardi
+ % Creation date:     2019-01-14
+ % File:              curriculum-vitae.tex
+ % License:           <to be filled>
+ % Plataform:         <not especified>
+ % 
+ % Description: <to be filled>
+ % 
+ % -----------------------------------------------------------------------------
+
+% ************************************ %
+% Document class and definitions       %
+% ************************************ %
+
+% Document class options are: ('10pt', '11pt' and '12pt'), ('a4paper',
+% 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape'),
+% ('sans' and 'roman')
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% Fixed style
+\moderncvstyle{classic}
+
+% Color options are: 'blue' (default), 'orange', 'green', 'red', 'purple',
+% 'grey' and 'black'
+\moderncvcolor{blue}
+
+% Family font options are: '\sfdefault' for the default sans serif font,
+% '\rmdefault' for the default roman one, or any tex font name
+\renewcommand{\familydefault}{\sfdefault}
+
+% Page numbering supressor
+%\nopagenumbers{}
+
+% Character encoding
+\usepackage[utf8]{inputenc}
+%\usepackage{CJKutf8}                   % CJK is nedeed for chinese, japanese and korean langauges
+
+% Page margin
+\usepackage[scale=0.75]{geometry}
+
+% Modern timeline importing
+\usepackage{moderntimeline}
+
+% Timeline horizontal size
+\setlength{\hintscolumnwidth}{2.75cm}
+
+% Timeline width
+\tlwidth{0}
+
+% Timeline scale
+\tlmaxdates{2010}{2019}
+
+% ************************************ %
+% Personal data                        %
+% ************************************ %
+
+% Mandatory data
+% --------------------------------------
+
+\name{\Huge Maurício}{Spinardi}
+
+% Optional data
+% --------------------------------------
+
+\title{\Large Mestrando em Computação \protect\\Científica e Ciência Computacional}
+
+\address{Rua Ten-Cel Luiz Antônio Anhaia, 73}{Vila Gardiman}{13309-391, Itu, SP, BR}
+
+% Phone options are: 'mobile', 'fixed' and 'fax'
+\phone[mobile]{+55~(11)~98582~1184~[TIM]}
+
+\email{mauricio.spinardi@gmail.com}
+
+%\homepage{www.johndoe.com}
+
+\extrainfo{26 anos, solteiro}
+
+%\photo[64pt][0.4pt]{../res/profile_pic}
+
+%\quote{Some quote (optional)}
+
+% Bibliography
+% --------------------------------------
+
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+\usepackage{multibib}
+%\newcites{book,misc}{{Livros},{Outros}}
+
+% ************************************ %
+% Content                              %
+% ************************************ %
+
+\begin{document}
+
+% Header
+% --------------------------------------
+
+\maketitle
+
+% 
+% --------------------------------------
+\section{Formação acadêmica}
+
+\tlcventry{2017}{0}{Mestrado em Computação Científica e Ciência Computacional}{Programa de Pós-graduação em Ciência da Computação, UFSCar}
+{Sorocaba}{SP}{Previsão de encerramento: 2019}
+
+\tlcventry{2011}{2016}{Bacharelado em Ciência da Computação}{UFSCar}
+{Sorocaba, SP}{}{}
+
+\tllabelcventry{2010}{2010}{2010}{Ensino Médio}{Colégio Terras}
+{Itu}{SP}{}
+
+% 
+% --------------------------------------
+
+%\footer{Desenvolvido em \LaTeX}
+
+%\clearpage\end{CJK*}                   % CJK is nedeed for chinese, japanese and korean langauges
+\end{document}
