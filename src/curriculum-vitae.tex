@@ -1,24 +1,39 @@
- % Project: Curriculum-Vitae
+%% curriculum-vitae.tex
+%% Copyright 2019 Maurício Spinardi
+ %
+ % This work may be distributed and/or modified under the
+ % conditions of the LaTeX Project Public License, either version 1.3
+ % of this license or (at your option) any later version.
+ % The latest version of this license is in
+ %   http://www.latex-project.org/lppl.txt
+ % and version 1.3 or later is part of all distributions of LaTeX
+ % version 2005/12/01 or later.
+ %
+ % This work has the LPPL maintenance status `maintained'.
+%%
+
+%% Project: Curriculum-Vitae
  % -------------------------------------
  %
  % Author:            Maurício Spinardi
  % Creation date:     2019-01-14
  % File:              curriculum-vitae.tex
- % License:           <to be filled>
+ % License:           LPPL 1.3c
  % Plataform:         <not especified>
  % 
- % Description: <to be filled>
+ % Description: Curriculum Vitae
  % 
  % -----------------------------------------------------------------------------
+%%
 
 % Document class options are: ('10pt', '11pt' and '12pt'), ('a4paper',
 % 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape'),
 % ('sans' and 'roman')
 \documentclass[11pt,a4paper,sans]{moderncv}
 
-\usepackage{booktabs}
 \usepackage[scale=0.75]{geometry}
 \usepackage[utf8]{inputenc}
+\usepackage{booktabs}
 \usepackage{moderntimeline}
 \usepackage{progressbar}
 \usepackage{relsize}
@@ -26,17 +41,9 @@
 % Document settings
 % --------------------------------------
 
-\moderncvstyle{classic}
-
-% Color options are: 'blue' (default), 'orange', 'green', 'red', 'purple',
-% 'grey' and 'black'
 \moderncvcolor{blue}
-
-% Family font options are: '\sfdefault' for the default sans serif font,
-% '\rmdefault' for the default roman one, or any tex font name
+\moderncvstyle{classic}
 \renewcommand{\familydefault}{\sfdefault}
-
-\nopagenumbers{}
 
 % Timeline settings
 % --------------------------------------
@@ -56,9 +63,8 @@
 
 \newcommand\CC{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
 
-% ************************************ %
-% Profile header                       %
-% ************************************ %
+% Profile header
+% --------------------------------------
 
 \name{\Huge Maurício}{Spinardi}
 \title{\Large Mestrando em Computação \protect\\Científica e Ciência Computacional}
@@ -68,15 +74,15 @@
 \extrainfo{26 anos, solteiro}
 \photo[64pt][0.4pt]{../res/profile_pic}
 
-% ************************************ %
-% Document                             %
-% ************************************ %
+% Document
+% --------------------------------------
 
 \begin{document}
 
 \maketitle
 
 \section{Formação acadêmica}
+% --------------------------------------
 
 \tlcventry{2017}{0}
 {Mestrado em Computação Científica e Ciência Computacional}
@@ -94,6 +100,7 @@
 {Itu}{SP}{}
 
 \section{Resumo}
+% --------------------------------------
 
 \cvitem{}{Desenvolvedor de aplicações embarcadas, com experiência em C, \CC,
 Java e Lua, meios de captura (mensageria ISO 8583, processamento EMV) e
@@ -102,6 +109,7 @@ pesquisando novas abordagens para Seleção de Fornecedores no contexto de
 negócios e Indústria 4.0.}
 
 \section{Experiência profissional}
+% --------------------------------------
 
 \tldatecventry{2017}{\textit{\small{(Atual)}} Analista de Sistemas Júnior}
 {SETIS Automação e Sistemas Ltda}{São Paulo}{}
@@ -119,6 +127,7 @@ eletrônico com cartão.}
 Programação Orientada a Objetos.}
 
 \section{Idiomas}
+% --------------------------------------
 
 \begin{minipage}[htb]{.5\textwidth}
     \cvitem{Português}{\textbf{Nativo}}
@@ -135,6 +144,7 @@ Programação Orientada a Objetos.}
 \newpage
 
 \section{Certificações e Eventos}
+% --------------------------------------
 
 \begin{minipage}[htb]{.5\textwidth}
     \cvitem{título}{\emph{Telium SDK Training}}
@@ -159,6 +169,7 @@ Programação Orientada a Objetos.}
 \end{minipage}
 
 \section{Habilidades}
+% --------------------------------------
 
 \subsection{Desenvolvimento}
 
