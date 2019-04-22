@@ -12,9 +12,8 @@
  % This work has the LPPL maintenance status `maintained'.
 %%
 
-%% Project: Curriculum-Vitae
- % -------------------------------------
- %
+%% Project: curriculum-vitae
+ % -----------------------------------------------------------------------------
  % Author:            Maurício Spinardi
  % Creation date:     2019-01-14
  % File:              curriculum-vitae.tex
@@ -22,7 +21,6 @@
  % Plataform:         <not especified>
  % 
  % Description: Curriculum Vitae
- % 
  % -----------------------------------------------------------------------------
 %%
 
@@ -94,11 +92,6 @@
 {UFSCar}
 {Sorocaba, SP}{}{}
 
-\tllabelcventry{2010}{2010}{2010}
-{Ensino Médio}
-{Colégio Terras}
-{Itu}{SP}{}
-
 \section{Resumo}
 % --------------------------------------
 
@@ -111,17 +104,20 @@ negócios e Indústria 4.0.}
 \section{Experiência profissional}
 % --------------------------------------
 
-\tldatecventry{2017}{\textit{\small{(Atual)}} Analista de Sistemas Júnior}
+\tlcventry{2017}{0}
+{\textit{\small{(Atual)}} Analista de Sistemas Júnior}
 {SETIS Automação e Sistemas Ltda}{São Paulo}{}
-{Desenvolvedor de aplicações embarcadas para terminais POS e outras soluções de
-pagamento eletrônico com cartão.}
+{Desenvolvedor de aplicações embarcadas para terminais POS, PIN-Pads ABECS e
+outras soluções de pagamento eletrônico com cartão.}
 
-\tldatecventry{2016}{Estagiário}
+\tldatecventry{2016}
+{Estagiário}
 {SETIS Automação e Sistemas Ltda}{São Paulo}{}
 {Oportunidade de aprendizado e iniciação profissional no setor de pagamento
 eletrônico com cartão.}
 
-\tldatecventry{2014}{Monitor em Programação Orientada a Objetos}
+\tldatecventry{2014}
+{Monitor em Programação Orientada a Objetos}
 {UFSCar}{Sorocaba}{}
 {Suporte na formação de colegas de profissão durante o aprendizado de
 Programação Orientada a Objetos.}
@@ -129,13 +125,9 @@ Programação Orientada a Objetos.}
 \section{Idiomas}
 % --------------------------------------
 
-\begin{minipage}[htb]{.5\textwidth}
-    \cvitem{Português}{\textbf{Nativo}}
-    \cvitem{Español}{\textbf{Intermedio}}
-\end{minipage}
-\begin{minipage}[htb]{.5\textwidth}
-    \cvitem{English}{\textbf{Intermediate \tiny{TOEFL®ITP: 613/677}}}
-\end{minipage}
+\cvitem{Português}{\textbf{Nativo}}
+\cvitem{English}{\textbf{Intermediate \tiny{TOEFL®ITP: 613/677}}}
+\cvitem{Español}{\textbf{Intermedio}}
 
 \vfill
 \textcolor{gray}{Desenvolvido em \LaTeX}
@@ -168,52 +160,52 @@ Programação Orientada a Objetos.}
     \cvitem{data}{janeiro de 2013}
 \end{minipage}
 
-\section{Habilidades}
+\section{Conhecimento técnico e habilidades}
 % --------------------------------------
 
-\subsection{Desenvolvimento}
+% \vspace{2.5mm}
 
-\cvitem{\textbf{Linguagens}}{C, \CC, Delphi, Java, Lua, Python}
-
-\vspace{2.5mm}
-
-\cvitem{}
+\cvitem{\textbf{Linguagens}}
 {
     \begin{tabular}{p{25mm}p{\linewidth}}
         \textbf{C}              & \progressbar{0.90} \protect\\
-        \textbf{\CC}            & \progressbar{0.60} \protect\\
         \textbf{Delphi}         & \progressbar{0.45} \protect\\
+        \textbf{JavaScript}     & \progressbar{0.35} \protect\\
         \textbf{Java}           & \progressbar{0.70} \protect\\
         \textbf{Lua}            & \progressbar{0.80} \protect\\
-        \textbf{Python}         & \progressbar{0.35}
+        \textbf{Python}         & \progressbar{0.35} \protect\\
+        \textbf{TypeScript}     & \progressbar{0.35} \protect\\
+        \textbf{\CC}            & \progressbar{0.60}
     \end{tabular}
 }
 
 \vspace{2.5mm}
 
 \cvitem{\textbf{Banco de dados}}{MySQL, PostgreSQL}
-\cvitem{\textbf{Metodologias}}{SCRUM, Reativa}
-\cvitem{\textbf{Versionadores}}{Git, SourceSafe, SVN}
+\cvitem{\textbf{Metodologias}}{SCRUM, Kanban, Reativa}
 
 \vspace{2.5mm}
 
-\cvitem{}
+\cvitem{\textbf{Versionadores}}
 {
     \begin{tabular}{p{25mm}p{\linewidth}}
         \textbf{Git}            & \progressbar{0.85} \protect\\
         \textbf{SourceSafe}     & \progressbar{0.75} \protect\\
-        \textbf{SVN}            & \progressbar{0.35}
+        \textbf{SVN}            & \progressbar{0.25}
     \end{tabular}
 }
 
 \vspace{5mm}
 
-\subsection{Outras linhas e tópicos}
+\subsection{Tópicos diversos}
 
-\cvitem{}{SDKs para dispositivos Ingenico (Telium 2/Plus) e Verifone Verix eVo}
+\cvitem{}{Ingenico SDK Telium 2/Telium Plus}
+\cvitem{}{Verifone ADK VOS2/SDK Verix eVo}
 \cvitem{}{Sistemas de autorização com ou sem mensageria ISO 8583}
+\cvitem{}{Processamento de cartões EMV}
 \cvitem{}{Web REST e JSON}
 \cvitem{}{PThreads, OpenMP, MPI e APIs embarcadas de paralelismo}
+\cvitem{}{MCDA/MCDM (AHP)}
 
 \vfill
 \textcolor{gray}{Desenvolvido em \LaTeX}
