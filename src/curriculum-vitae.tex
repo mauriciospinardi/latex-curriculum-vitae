@@ -14,7 +14,7 @@
 % ('sans' and 'roman')
 \documentclass[11pt,a4paper,sans]{moderncv}
 
-\usepackage[scale=0.75]{geometry}
+\usepackage[bottom=3cm,scale=0.75,top=3cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{booktabs}
 \usepackage{moderntimeline}
@@ -32,7 +32,7 @@
 % --------------------------------------
 
 \setlength{\hintscolumnwidth}{2.85cm}       % Length
-\tlmaxdates{2011}{2019}                     % Scale
+\tlmaxdates{2011}{2020}                     % Scale
 \tlwidth{0}
 
 % Progress bar definitions
@@ -45,19 +45,32 @@ width=.75\linewidth}
 % Customized commands
 % --------------------------------------
 
-\newcommand\CC{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}
-{\textbf{++}}}}
+\newcommand\CC
+{
+    C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}
+}
+
+\newcommand\CF
+{
+    \vfill
+    \textcolor{gray}{
+        Desenvolvido em \LaTeX \protect \\ \\
+        \small{
+            \url{https://github.com/mauriciospinardi} \\
+            \url{https://hackerrank.com/mauriciospinardi}
+        }
+    }
+}
 
 % Profile header
 % --------------------------------------
 
 \name{\Huge Maurício}{Spinardi}
-\title{\Large Desenvolvedor de aplicações embarcadas e soluções de pagamento
-eletrônico}
-\address{Rua Glicério, 301}{Liberdade}{01514-000, São Paulo, SP, Brasil}
-\phone[mobile]{+55~(11)~98582~1184~[TIM]}
+\title{\Large Desenvolvedor de soluções\newline embarcadas de pagamento eletrônico}
+\address{}{Liberdade, 01514-000}{São Paulo, SP, Brasil}
+\phone[mobile]{+55~(11)~98582~1184~[VIVO]}
 \email{mauricio.spinardi@gmail.com}
-\extrainfo{26 anos, solteiro}
+\extrainfo{27 anos, solteiro}
 \photo[64pt][0.4pt]{../misc/profile_pic}
 
 % Document
@@ -72,35 +85,33 @@ eletrônico}
 
 \tlcventry{2017}{2019}
 {Mestrado em Computação Científica e Ciência Computacional}
-{Programa de Pós-graduação em Ciência da Computação, UFSCar}
-{Sorocaba}{SP}{}
+{}{}{}{Universidade Federal de São Carlos. Sorocaba, São Paulo.}
 
 \tlcventry{2011}{2016}
 {Bacharelado em Ciência da Computação}
-{UFSCar}
-{Sorocaba}{SP}{}
+{}{}{}{Universidade Federal de São Carlos. Sorocaba, São Paulo.}
 
 \section{Resumo}
 % --------------------------------------
 
 \cvitem{}{Experiente em C, C++, Java e Lua, meios de captura (mensageria ISO
-8583, processamento EMV) e manutenção reativa. Familiar com as plataformas
-Verifone Verix eVo/V-OS2 e Ingenico Telium 2/Telium Plus (Tetra).}
+8583, processamento EMV com/sem contato) e manutenção reativa. Familiar com as
+plataformas Verifone Verix eVo, Verifone Engage V-OS2, Ingenico Telium 2 e
+Ingenico Telium Plus (Tetra).}
 
 \section{Experiência profissional}
 % --------------------------------------
 
 \tlcventry{2017}{0}
-{\textit{\small{(Atual)}} Analista de Sistemas Júnior}
-{SETIS Automação e Sistemas Ltda}{São Paulo}{}
-{Desenvolvedor de soluções embarcadas de pagamento eletrônico com cartão em
+{\textit{\small{(Atual)}} Analista de Sistemas}
+{SETIS Automação e Sistemas Ltda}{}{}
+{Desenvolvimento e manutenção de soluções embarcadas de pagamento eletrônico em
 terminais POS e PINPADs.}
 
 \tldatecventry{2016}
 {Estagiário}
-{SETIS Automação e Sistemas Ltda}{São Paulo}{}
-{Oportunidade de aprendizado e iniciação profissional no setor de pagamento
-eletrônico com cartão.}
+{SETIS Automação e Sistemas Ltda}{}{}
+{Iniciação profissional no setor de pagamento eletrônico com cartão.}
 
 \tldatecventry{2014}
 {Monitor em Programação Orientada a Objetos}
@@ -116,9 +127,7 @@ Programação Orientada a Objetos.}
 2019)}}}
 \cvitem{Español}{\textbf{Intermedio}}
 
-\vfill
-\textcolor{gray}{Desenvolvido em \LaTeX \protect \\
-\small{\url{https://github.com/spinardi/curriculum-vitae}}}
+\CF
 
 % ------------------------------------------------------------------------------
 \newpage
@@ -151,47 +160,43 @@ Programação Orientada a Objetos.}
 \section{Conhecimento técnico e habilidades}
 % --------------------------------------
 
-% \vspace{2.5mm}
+\vspace{1.5mm}
 
-\cvitem{\textbf{Linguagens}}
+\cvitem{\textbf{Linguagens de programação}}
 {
     \begin{tabular}{p{25mm}p{\linewidth}}
-        \textbf{C} & \progressbar{0.90} \protect\\
-        \textbf{Delphi} & \progressbar{0.30} \protect\\
-        \textbf{JavaScript} & \progressbar{0.35} \protect\\
-        \textbf{Java} & \progressbar{0.65} \protect\\
-        \textbf{Lua} & \progressbar{0.75} \protect\\
-        \textbf{Python} & \progressbar{0.25} \protect\\
-        \textbf{TypeScript} & \progressbar{0.35} \protect\\
-        \textbf{\CC} & \progressbar{0.60}
+        \textbf{ C} & \progressbar{0.90} \protect\\
+        \textbf{\CC} & \progressbar{0.60} \protect\\
+        \textbf{Delphi} & \progressbar{0.25} \protect\\
+        \textbf{JavaScript} & \progressbar{0.30} \protect\\
+        \textbf{Java} & \progressbar{0.50} \protect\\
+        \textbf{Lua} & \progressbar{0.55} \protect\\
+        \textbf{Python} & \progressbar{0.15} \protect\\
+        \textbf{TypeScript} & \progressbar{0.30}
     \end{tabular}
 }
 
 \vspace{2.5mm}
 
 \cvitem{\textbf{Banco de dados}}{MySQL, PostgreSQL}
-\cvitem{\textbf{Metodologias}}{Clássica, SCRUM, Kanban}
+\cvitem{\textbf{Metodologias}}{Cascata, SCRUM, Kanban}
 
 \vspace{2.5mm}
 
 \cvitem{\textbf{Versionadores}}
 {
     \begin{tabular}{p{25mm}p{\linewidth}}
-        \textbf{Git} & \progressbar{0.85} \protect\\
-        \textbf{SourceSafe} & \progressbar{0.75} \protect\\
+        \textbf{Git} & \progressbar{0.80} \protect\\
+        \textbf{SourceSafe} & \progressbar{0.70} \protect\\
         \textbf{SVN} & \progressbar{0.25}
     \end{tabular}
 }
 
 \vspace{5mm}
 
-\subsection{Tópicos diversos}
+\cvitem{-}{Conhecimento básico de Web REST e JSON;}
+\cvitem{-}{Familiar com APIs embarcadas de paralelismo, PThreads, OpenMP e MPI.}
 
-\cvitem{}{Conhecimento básico de Web REST e JSON}
-\cvitem{}{Familiar com APIs embarcadas de paralelismo, PThreads, OpenMP e MPI}
-
-\vfill
-\textcolor{gray}{Desenvolvido em \LaTeX \protect \\
-\small{\url{https://github.com/spinardi/curriculum-vitae}}}
+\CF
 
 \end{document}
