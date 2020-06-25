@@ -14,7 +14,7 @@
 % ('sans' and 'roman')
 \documentclass[11pt,a4paper,sans]{moderncv}
 
-\usepackage[bottom=3cm,scale=0.75,top=3cm]{geometry}
+\usepackage[bottom=3cm,scale=0.75,top=2.5cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{booktabs}
 \usepackage{moderntimeline}
@@ -32,7 +32,7 @@
 % --------------------------------------
 
 \setlength{\hintscolumnwidth}{2.85cm}       % Length
-\tlmaxdates{2011}{2020}                     % Scale
+\tlmaxdates{2011}{2021}                     % Scale
 \tlwidth{0}
 
 % Progress bar definitions
@@ -66,8 +66,8 @@ width=.75\linewidth}
 % --------------------------------------
 
 \name{\Huge Maurício}{Spinardi}
-\title{\Large Developer of embedded payment software solutions}
-\address{}{Liberdade, 01514-000}{São Paulo, SP, Brasil}
+\title{\Large Developer of embedded payment \newline software solutions}
+\address{}{Vila Gardiman, 13309-391}{Itu, SP, Brasil}
 \phone[mobile]{+55~(11)~98582~1184~[VIVO]}
 \email{mauricio.spinardi@gmail.com}
 \extrainfo{27 y/o, single}
@@ -83,40 +83,54 @@ width=.75\linewidth}
 \section{Academic background}
 % --------------------------------------
 
-\tlcventry{2017}{2019}
+\tldatecventry{2019}
 {M.Sc. in Computational Science}
 {}{}{}{Federal University of São Carlos. Sorocaba, São Paulo.}
 
-\tlcventry{2011}{2016}
+\tldatecventry{2016}
 {B.Sc. in Computer Science}
 {}{}{}{Federal University of São Carlos. Sorocaba, São Paulo.}
 
 \section{About me}
 % --------------------------------------
 
-\cvitem{}{Software developer, familiar with C, C++, Java and Lua. Experienced
-with embedded payment solutions (ISO 8583, EMV contact and contactless card
-processing) and on-demand maintenance. Currently working with hardware from
-Verifone (Verix eVo and Engage V-OS2) and Ingenico manufactors (Telium 2 and
-Telium Plus).}
+\cvitem{}{Software developer with a background in C, C++, Java and Lua.
+Experienced with embedded payment solutions (ISO 8583, EMV contact and
+contactless card processing) and on-demand maintenance. Currently working with
+hardware from Verifone (Verix eVo and Engage V-OS2) and Ingenico (Telium 2 and
+Telium Plus) manufacturers.}
+
+\vspace{\baselineskip}
+
+\cvitem{}{Most relevant projects:}
+
+\vspace{\baselineskip}
+
+\cvitem{}{
+\cvitem{\textbf{PagBem}:}{Verifone Verix.}
+\cvitem{\textbf{SafraPay}:}{Ingenico Tetra; Verifone Verix.}
+\cvitem{\textbf{Redeflex}:}{Ingenico Telium 2 and Tetra; Verifone Verix and
+Engage.}
+\cvitem{\textbf{ABECS}:}{Ingenico Telium 2 and Tetra; Verifone Engage.}
+}
 
 \section{Professional background}
 % --------------------------------------
 
 \tlcventry{2017}{0}
-{\textit{\small{(Current)}} System Software Analyst}
+{\textit{\small{(Current)}} System Analyst}
 {SETIS Automação e Sistemas Ltda}{}{}
 {Development and maintenance of embedded payment software solutions.}
 
 \tldatecventry{2016}
 {Intern}
 {SETIS Automação e Sistemas Ltda}{}{}
-{Professional initiation in the electronic card payment segment.}
+{}
 
 \tldatecventry{2014}
-{Teaching Assistant}
+{Object Oriented Programming Teaching Assistant}
 {Federal University of São Carlos}{Sorocaba}{São Paulo}
-{Object Oriented Programming related tasks.}
+{}
 
 \section{Languages}
 % --------------------------------------
@@ -193,7 +207,8 @@ Telium Plus).}
 \vspace{5mm}
 
 \cvitem{-}{Used to the routines of different project management approaches;}
-\cvitem{-}{Familiar with embedded APIs of parallelism, PThreads, OpenMP and MPI.}
+\cvitem{-}{Familiar with embedded APIs of parallelism and asynchronism,
+PThreads, OpenMP and MPI.}
 
 \CF
 
