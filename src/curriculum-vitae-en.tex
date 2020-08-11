@@ -1,13 +1,10 @@
-\iffalse
- * Author:          Maurício Spinardi
- * Creation date:   2019-01-14
- * File:            curriculum-vitae.tex
- * License:         LPPL 1.3c
- * Platform:        <not specified>
- * Project:         curriculum-vitae
- *
- * Description: Curriculum Vitae [en-us]
-\fi
+%
+% @file curriculum-vitae.tex
+% @author Maurício Spinardi
+% @platform N/A
+% @brief Curriculum Vitae [en-us]
+% @date 2019-01-14
+%
 
 % Document class options are: ('10pt', '11pt' and '12pt'), ('a4paper',
 % 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape'),
@@ -17,7 +14,6 @@
 \usepackage[bottom=3cm,scale=0.75,top=2.5cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{booktabs}
-\usepackage{moderntimeline}
 \usepackage{progressbar}
 \usepackage{relsize}
 
@@ -26,52 +22,30 @@
 
 \moderncvcolor{blue}
 \moderncvstyle{classic}
-\renewcommand{\familydefault}{\sfdefault}
-
-% Timeline settings
-% --------------------------------------
-
-\setlength{\hintscolumnwidth}{2.85cm}       % Length
-\tlmaxdates{2011}{2021}                     % Scale
-\tlwidth{0}
 
 % Progress bar definitions
 % --------------------------------------
 
 \definecolor{pbblue}{rgb}{0.22,0.45,0.70}
-\progressbarchange{filledcolor=pbblue,heightr=1,roundnessa=2pt,
-width=.75\linewidth}
+\progressbarchange{filledcolor=pbblue,heightr=1,roundnessa=2pt,width=.75\linewidth}
 
 % Customized commands
 % --------------------------------------
 
-\newcommand\CC
-{
-    C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}
-}
+\newcommand\CC{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
 
-\newcommand\CF
-{
-\vfill
-    \textcolor{gray}{
-        Written in \LaTeX \protect \\ \\
-        \small{
-            \url{https://github.com/mauriciospinardi} \\
-            \url{https://hackerrank.com/mauriciospinardi}
-        }
-    }
-}
+\newcommand\CF{\vfill\begin{flushright}\textcolor{gray}{Written in \LaTeX\protect\\\small{\url{https://github.com/mauriciospinardi}}}\end{flushright}}
 
 % Profile header
 % --------------------------------------
 
 \name{\Huge Maurício}{Spinardi}
-\title{\Large Embedded payment software \newline developer}
+\title{\Large Embedded payment software\protect\\developer}
 \address{}{Vila Gardiman, 13309-391}{Itu, SP, Brasil}
 \phone[mobile]{+55~(11)~98582~1184~[VIVO]}
 \email{mauricio.spinardi@gmail.com}
 \extrainfo{27 y/o, single}
-\photo[64pt][0.4pt]{../misc/profile_pic}
+\photo[64pt][0.4pt]{./misc/profile_pic}
 
 % Document
 % --------------------------------------
@@ -83,54 +57,49 @@ width=.75\linewidth}
 \section{Academic background}
 % --------------------------------------
 
-\tldatecventry{2019}
-{M.Sc. in Computational Science}
-{}{}{}{Federal University of São Carlos. Sorocaba, São Paulo.}
+\cvitem{2017-2019}{\textbf{M.Sc. in Computational Science}}
+\cvitem{}{\small{Federal University of São Carlos. Sorocaba, São Paulo.}}
 
-\tldatecventry{2016}
-{B.Sc. in Computer Science}
-{}{}{}{Federal University of São Carlos. Sorocaba, São Paulo.}
+\cvitem{2011-2016}{\textbf{B.Sc. in Computer Science}}
+\cvitem{}{\small{Federal University of São Carlos. Sorocaba, São Paulo.}}
 
 \section{About me}
 % --------------------------------------
 
-\cvitem{}{Software developer with a background in C, C++, Java and Lua.
+\hspace{1.25cm} Software developer with a background in C, C ++, Java and Lua.
 Experienced with embedded payment solutions (ISO 8583, EMV contact and
-contactless card processing) and on-demand maintenance. Currently working with
-hardware from Verifone (Verix eVo and Engage V-OS2) and Ingenico (Telium 2 and
-Telium Plus) manufacturers.}
+contactless card processing) and on-demand maintenance. Used to work with
+hardware from Verifone and Ingenico.
 
 \vspace{\baselineskip}
 
-\cvitem{}{Most relevant projects:}
+\hspace{1.25cm} Most relevant projects as developer:
 
 \vspace{\baselineskip}
 
-\cvitem{}{
-\cvitem{\textbf{PagBem}:}{Verifone Verix.}
-\cvitem{\textbf{SafraPay}:}{Ingenico Tetra; Verifone Verix.}
-\cvitem{\textbf{Rede}:}{Ingenico Telium 2 and Tetra; Verifone Verix and
-Engage.}
-\cvitem{\textbf{ABECS}:}{Ingenico Telium 2 and Tetra; Verifone Engage.}
-}
+\cvitem{\textbf{PagBem}}{Verifone Verix.}
+\cvitem{\textbf{SafraPay}}{Ingenico Tetra; Verifone Verix.}
+\cvitem{\textbf{Rede}}{Ingenico Telium 2 and Tetra; Verifone Verix and Engage.}
+\cvitem{\textbf{ABECS}}{Ingenico Telium 2 and Tetra; Verifone Engage.}
 
 \section{Professional background}
 % --------------------------------------
 
-\tlcventry{2017}{0}
-{\textit{\small{(Current)}} System Analyst}
-{SETIS Automação e Sistemas Ltda}{}{}
-{Development and maintenance of embedded payment software solutions.}
+\cvitem{}{Verifone do Brasil Ltda}
+\small{\cvitem{Since 2020}{\textbf{Outsourced service provider}}}
 
-\tldatecventry{2016}
-{Intern}
-{SETIS Automação e Sistemas Ltda}{}{}
-{}
+\vspace{\baselineskip}
 
-\tldatecventry{2014}
-{Object Oriented Programming Teaching Assistant}
-{Federal University of São Carlos}{Sorocaba}{São Paulo}
-{}
+\cvitem{}{SETIS Automação e Sistemas Ltda}
+\cvitem{Since 2017}{\textbf{System Analyst}}
+\cvitem{}{\small{\emph{Embedded payment software development and maintenance.}}}
+\cvitem{2016}{\textbf{Intern}}
+
+\vspace{\baselineskip}
+
+\cvitem{}{Federal University of São Carlos - Campus Sorocaba}
+\cvitem{2014}{\textbf{Object Oriented Programming Teaching Assistant}}
+
 
 \section{Languages}
 % --------------------------------------
@@ -178,14 +147,14 @@ Engage.}
 \cvitem{\textbf{Programming Languages}}
 {
     \begin{tabular}{p{25mm}p{\linewidth}}
-        \textbf{ C} & \progressbar{0.90} \protect\\
-        \textbf{\CC} & \progressbar{0.60} \protect\\
-        \textbf{Delphi} & \progressbar{0.25} \protect\\
-        \textbf{JavaScript} & \progressbar{0.30} \protect\\
-        \textbf{Java} & \progressbar{0.50} \protect\\
-        \textbf{Lua} & \progressbar{0.55} \protect\\
-        \textbf{Python} & \progressbar{0.15} \protect\\
-        \textbf{TypeScript} & \progressbar{0.30}
+        \textbf{C} & \progressbar{0.90}\protect\\
+        \textbf{\CC} & \progressbar{0.65}\protect\\
+        \textbf{Delphi} & \progressbar{0.15}\protect\\
+        \textbf{JavaScript} & \progressbar{0.25}\protect\\
+        \textbf{Java} & \progressbar{0.45}\protect\\
+        \textbf{Lua} & \progressbar{0.50}\protect\\
+        \textbf{Python} & \progressbar{0.20}\protect\\
+        \textbf{TypeScript} & \progressbar{0.25}
     \end{tabular}
 }
 
@@ -198,8 +167,8 @@ Engage.}
 \cvitem{\textbf{Source control}}
 {
     \begin{tabular}{p{25mm}p{\linewidth}}
-        \textbf{Git} & \progressbar{0.80} \protect\\
-        \textbf{SourceSafe} & \progressbar{0.70} \protect\\
+        \textbf{Git} & \progressbar{0.80}\protect\\
+        \textbf{SourceSafe} & \progressbar{0.70}\protect\\
         \textbf{SVN} & \progressbar{0.25}
     \end{tabular}
 }
@@ -207,8 +176,7 @@ Engage.}
 \vspace{5mm}
 
 \cvitem{-}{Used to the routines of different project management approaches;}
-\cvitem{-}{Familiar with embedded APIs of parallelism and asynchronism,
-PThreads, OpenMP and MPI.}
+\cvitem{-}{Familiar with embedded APIs of parallelism and asynchronism, PThreads, OpenMP and MPI.}
 
 \CF
 
