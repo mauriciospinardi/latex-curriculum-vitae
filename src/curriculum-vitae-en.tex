@@ -11,7 +11,7 @@
 % ('sans' and 'roman')
 \documentclass[11pt,a4paper,sans]{moderncv}
 
-\usepackage[bottom=3cm,scale=0.75,top=2.5cm]{geometry}
+\usepackage[bottom=3cm,scale=0.75,top=3cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{booktabs}
 \usepackage{progressbar}
@@ -32,7 +32,7 @@
 % Customized commands
 % --------------------------------------
 
-\newcommand\CC{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
+\newcommand\CPP{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
 
 \newcommand\CF{\vfill\begin{flushright}\textcolor{gray}{Written in \LaTeX\protect\\\small{\url{https://github.com/mauriciospinardi}}}\end{flushright}}
 
@@ -40,11 +40,11 @@
 % --------------------------------------
 
 \name{\Huge Maurício}{Spinardi}
-\title{\Large Embedded payment software\protect\\developer}
+\title{\Large Embedded payment software\protect\\engineer}
 \address{}{Vila Gardiman, 13309-391}{Itu, SP, Brasil}
 \phone[mobile]{+55~(11)~98582~1184~[VIVO]}
 \email{mauricio.spinardi@gmail.com}
-\extrainfo{27 y/o, single}
+\extrainfo{28 y/o, single}
 \photo[64pt][0.4pt]{../misc/profile_pic}
 
 % Document
@@ -54,8 +54,91 @@
 
 \maketitle
 
+\section{About me}
+% --------------------------------------
+
+\vspace{0.5mm}
+
+\hspace{1.25cm} Software developer with a background in C, C ++, Java and Lua.
+Experienced with embedded payment solutions (ISO 8583, EMV contact and
+contactless card processing) and on-demand maintenance. Used to work with
+hardware from Verifone and Ingenico.\protect\\
+
+\hspace{1.25cm} Highlights as developer: \textit{POS PagBem, POS SafraPay, POS
+Rede, PINPAD ABECS, PINPAD Listo, PINPAD Bradesco and Biblioteca Compartilhada
+(BC).}
+
+\hspace{1.25cm} Highlights as Verifone Support Engineer or Specialist
+Consultant: \textit{POS Vero Banrisul (3IA), PW-HAL and POSWEB (Muxi),
+PagSeguro (UOL), POS UNICA (Tribanco) and Stone.}
+
+\section{Professional background}
+% --------------------------------------
+
+\vspace{0.5mm}
+
+\hspace{1.25cm} \textit{CloudWalk, Inc}
+
+\cvitem{since nov/20}{\textbf{Software Engineer}}
+
+\hspace{1.25cm} \begin{minipage}[htb]{\linewidth - 1.25cm}
+    Development and maintenance of capture solutions from CloudWalk, Inc.
+\end{minipage}
+
+\vspace{\baselineskip}
+
+\hspace{1.25cm} \textit{Verifone do Brasil Ltda}
+
+\cvitem{apr/17 - oct/20}{\textbf{Outsourced service provider}}
+
+\hspace{1.25cm} \begin{minipage}[htb]{\linewidth - 1.25cm}
+    Specialized support for Verifone Engage devices:
+    \begin{itemize}
+        \item[-] Low-level interface (C/C++)
+        \item[-] Projects creation and maintenance (VDE, FST e Cygwin)
+        \item[-] Version control (Git)
+        \item[-] Package building (Shell), installation and (OTA) updates
+    \end{itemize}
+\end{minipage}
+
+\vspace{\baselineskip}
+
+\hspace{1.25cm} \textit{SETIS Automação e Sistemas Ltda}
+
+\cvitem{jan/17 - oct/20}{\textbf{System Analyst}}
+
+\hspace{1.25cm} \begin{minipage}[htb]{\linewidth - 1.25cm}
+    Embedded payment software development and maintenance:
+    \begin{itemize}
+        \item[-] EMV card processing
+        \item[-] Multiplatform development (C and Lua)
+        \item[-] Analysis and implementation of business rules (C/C++, Lua,
+                 HTML, XML e JSON)
+        \item[-] Low-level interface (C/C++)
+    \end{itemize}
+\end{minipage}
+
+\vspace{\baselineskip}
+
+\hspace{1.25cm} \textit{SETIS Automação e Sistemas Ltda}
+
+\cvitem{mar/16 - dec/16}{\textbf{Intern}}
+
+\vspace{\baselineskip}
+
+\hspace{1.25cm} \textit{Universidade Federal de São Carlos - Campus Sorocaba}
+
+\cvitem{mar/14 - jun/14}{\textbf{Object Oriented Programming Teaching Assistant}}
+
+\CF
+
+% ------------------------------------------------------------------------------
+\newpage
+
 \section{Academic background}
 % --------------------------------------
+
+\vspace{0.5mm}
 
 \cvitem{2017-2019}{\textbf{M.Sc. in Computational Science}}
 \cvitem{}{\small{Federal University of São Carlos. Sorocaba, São Paulo.}}
@@ -63,59 +146,19 @@
 \cvitem{2011-2016}{\textbf{B.Sc. in Computer Science}}
 \cvitem{}{\small{Federal University of São Carlos. Sorocaba, São Paulo.}}
 
-\section{About me}
-% --------------------------------------
-
-\hspace{1.25cm} Software developer with a background in C, C ++, Java and Lua.
-Experienced with embedded payment solutions (ISO 8583, EMV contact and
-contactless card processing) and on-demand maintenance. Used to work with
-hardware from Verifone and Ingenico.
-
-\vspace{\baselineskip}
-
-\hspace{1.25cm} Most relevant projects as developer:
-
-\vspace{\baselineskip}
-
-\cvitem{\textbf{PagBem}}{Verifone Verix.}
-\cvitem{\textbf{SafraPay}}{Ingenico Tetra; Verifone Verix.}
-\cvitem{\textbf{Rede}}{Ingenico Telium 2 and Tetra; Verifone Verix and Engage.}
-\cvitem{\textbf{ABECS}}{Ingenico Telium 2 and Tetra; Verifone Engage.}
-
-\section{Professional background}
-% --------------------------------------
-
-\cvitem{}{Verifone do Brasil Ltda}
-\small{\cvitem{Since 2020}{\textbf{Outsourced service provider}}}
-
-\vspace{\baselineskip}
-
-\cvitem{}{SETIS Automação e Sistemas Ltda}
-\cvitem{Since 2017}{\textbf{System Analyst}}
-\cvitem{}{\small{\emph{Embedded payment software development and maintenance.}}}
-\cvitem{2016}{\textbf{Intern}}
-
-\vspace{\baselineskip}
-
-\cvitem{}{Federal University of São Carlos - Campus Sorocaba}
-\cvitem{2014}{\textbf{Object Oriented Programming Teaching Assistant}}
-
-
 \section{Languages}
 % --------------------------------------
 
+\vspace{0.5mm}
+
 \cvitem{Português}{\textbf{Native}}
-\cvitem{English}{\textbf{Intermediate \tiny{TOEFL®ITP: 613/677 (Exp. date: Oct.
-2019)}}}
+\cvitem{English}{\textbf{Intermediate \tiny{TOEFL®ITP: 613/677 (Exp. date: Oct. 2019)}}}
 \cvitem{Español}{\textbf{Intermedio}}
-
-\CF
-
-% ------------------------------------------------------------------------------
-\newpage
 
 \section{Events and Certificates}
 % --------------------------------------
+
+\vspace{0.5mm}
 
 \begin{minipage}[htb]{.5\textwidth}
     \cvitem{title}{\emph{Telium SDK Training}}
@@ -142,13 +185,22 @@ hardware from Verifone and Ingenico.
 \section{Technical skills}
 % --------------------------------------
 
-\vspace{1.5mm}
+\vspace{0.5mm}
+
+\hspace{1.25cm} \begin{minipage}[htb]{\linewidth - 1.25cm}
+    \begin{itemize}
+        \item[-] Used to the routines of different project management approaches;
+        \item[-] Familiar with embedded APIs of parallelism and asynchronism,
+                 PThreads, OpenMP and MPI.
+    \end{itemize}
+\end{minipage}
+
+\vspace{5mm}
 
 \cvitem{\textbf{Programming Languages}}
 {
     \begin{tabular}{p{25mm}p{\linewidth}}
-        \textbf{C} & \progressbar{0.90}\protect\\
-        \textbf{\CC} & \progressbar{0.65}\protect\\
+        \textbf{C/\CPP} & \progressbar{0.90}\protect\\
         \textbf{Delphi} & \progressbar{0.15}\protect\\
         \textbf{JavaScript} & \progressbar{0.25}\protect\\
         \textbf{Java} & \progressbar{0.45}\protect\\
@@ -172,11 +224,6 @@ hardware from Verifone and Ingenico.
         \textbf{SVN} & \progressbar{0.25}
     \end{tabular}
 }
-
-\vspace{5mm}
-
-\cvitem{-}{Used to the routines of different project management approaches;}
-\cvitem{-}{Familiar with embedded APIs of parallelism and asynchronism, PThreads, OpenMP and MPI.}
 
 \CF
 
